@@ -3,12 +3,17 @@
 
 #include "Influence.h"
 
+using namespace std;
+
+
 int main()
 {
     Influence TestInf;
-    TestInf.SetInfluenceName("Courage");
+    TestInf.SetInfluenceName("Power");
     
-    std::cout << "Test" << std::endl;
+    cout << "Test" << endl;
     
-    std::cout << TestInf.GetInfluenceName() << std::endl;
+    cout << TestInf.GetInfluenceName() << endl;
+    
+    return 0;
 }

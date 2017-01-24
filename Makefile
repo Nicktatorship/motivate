@@ -1,11 +1,11 @@
-all: Influence main
+OBJECTS = main.o Influence.o
+EXEC = main
+CXXFLAGS = -std=c++11 -Wall
+LDFLAGS =
+CXX = g++
 
-%: %.cc
-	g++ -std=c++11 $< -o $@
-	
-%: %.cpp
-	g++ -std=c++11 $< -o $@
+all: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $(EXEC) $(OBJECTS)
 
-%: %.c
-	gcc $< -o $@
-
+clean:
+	rm *.o

@@ -1,12 +1,19 @@
+#pragma once
+
 #include <string>
 
-class Influence {
+using namespace std;
+
+class Influence 
+{
     public:
-        Influence();
+        Influence(); // constructor
         
-        void SetInfluenceName(std::string Name);
-        std::string GetInfluenceName() const;
+        void SetInfluenceName(string InfName);
+        
+        string GetInfluenceName();
+        
         
     private:
-        std::string InfluenceName;
+        string InfluenceName;
 };

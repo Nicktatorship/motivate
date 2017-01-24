@@ -1,17 +1,19 @@
 #include "Influence.h"
-#include <string>
 
 Influence::Influence() 
 {
-    
+    SetInfluenceName("Unknown");
 }
 
-void Influence::SetInfluenceName(std::string Name)
+void Influence::SetInfluenceName(string InfName)
 {
-    InfluenceName = Name;
+    InfluenceName = InfName;
+    
+    return;
 }
 
-std::string Influence::GetInfluenceName()
+
+string Influence::GetInfluenceName()
 {
     return InfluenceName;
 }
