@@ -1,4 +1,4 @@
-OBJECTS = main.o Influence.o
+OBJECTS = main.o Influence.o Character.o Skill.o
 EXEC = main
 CXXFLAGS = -std=c++11 -Wall
 LDFLAGS =
